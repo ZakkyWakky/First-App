@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First App</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 80px; }
+    button { font-size: 24px; padding: 12px 24px; }
+  </style>
+</head>
+<body>
+  <h1>Click Counter</h1>
+  <p id="count">0</p>
+  <button onclick="add()">Click me</button>
+  <script>
+    let n = 0;
+    function add() {
+      n++;
+      document.getElementById("count").textContent = n;
+    }
+  </script>
+</body>
+</html>
